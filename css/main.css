@@ -31,6 +31,41 @@
   line-height: 21px;
 }
 
+/*
+.pvcpu {
+}
+.pvcpu:hover {
+  border-color: #5c2dd5;
+}
+.pvplayer {
+}
+.pvplayer:hover {
+  border-color: #5c2dd5;
+}
+
+.continuegame {
+}
+.continuegame:hover {
+  border-color: #5c2dd5;
+}
+.quitgame {
+}
+.quitgame:hover {
+  border-color: #5c2dd5;
+}
+
+.menu {
+}
+.menu:hover {
+  border-color: #5c2dd5;
+}
+.checkmark {
+}
+.checkmark:hover {
+  border-color: #5c2dd5;
+}
+*/
+
 body {
   background-color: #7945ff;
   padding: 5%;
@@ -47,4 +82,64 @@ nav {
   border: none;
   border-radius: 20px;
   color: #ffffff;
+}
+
+.playerscore {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-top: 3px;
+  border-right: 3px;
+  border-left: 3px;
+  border-bottom: 10px;
+  border-color: #000000;
+  border-style: solid;
+  border-radius: 20px;
+  width: 20%;
+}
+.playericon {
+  position: relative;
+  bottom: 30px;
+}
+.playerscores {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  padding: 2.5%;
+  background-color: #ffffff;
+  gap: 10px;
+  border-top: 3px;
+  border-right: 3px;
+  border-left: 3px;
+  border-bottom: 10px;
+  border-radius: 20px;
+  border-color: #000000;
+  border-style: solid;
+}
+.gamecol {
+  display: grid;
+  grid-template-rows: repeat(6, 50px);
+  grid-template-columns: repeat(1, 50px);
+  gap: 10px;
+}
+.token {
+  background-color: #7945ff;
+  border-top: 10px;
+  border-right: 3px;
+  border-left: 3px;
+  border-bottom: 3px;
+  border-color: #000000;
+  border-style: solid;
+  border-radius: 9999px;
+}
+
+.token:focus-visible {
+  outline: solid #5c2dd5;
 }
