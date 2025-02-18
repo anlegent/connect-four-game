@@ -76,6 +76,7 @@ nav {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 20px;
 }
 .navbtns {
   background-color: #5c2dd5;
@@ -98,12 +99,14 @@ nav {
   border-style: solid;
   border-radius: 20px;
   width: 20%;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 .playericon {
   position: relative;
   bottom: 30px;
 }
-.playerscores {
+.sectionmain {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -122,6 +125,7 @@ nav {
   border-radius: 20px;
   border-color: #000000;
   border-style: solid;
+  padding-bottom: 5%;
 }
 .gamecol {
   display: grid;
@@ -142,4 +146,40 @@ nav {
 
 .token:focus-visible {
   outline: solid #5c2dd5;
+}
+
+.chrono {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  border-top: 3px;
+  border-right: 3px;
+  border-left: 3px;
+  border-bottom: 10px;
+  border-color: #000000;
+  border-style: solid;
+  border-radius: 20px;
+}
+
+.chronop1 {
+  color: #ffffff;
+  background-color: #fd6687;
+}
+.chronop2 {
+  color: #000000;
+  background-color: #ffce67;
+}
+
+.chronosection {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 60px;
 }
