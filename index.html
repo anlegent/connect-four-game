@@ -12,9 +12,9 @@
   <body>
     <header>
       <nav>
-        <button class="navbtns headXS">MENU</button>
+        <button class="bluebtns headXS">MENU</button>
         <img src="./assets/logo.svg" alt="logo" />
-        <button class="navbtns headXS">RESTART</button>
+        <button class="bluebtns headXS">RESTART</button>
       </nav>
     </header>
     <main>
@@ -102,6 +102,49 @@
           <p class="headL" aria-live="assertive">30s</p>
         </div>
       </section>
+      <section class="playerwin1 redbg hidden" aria-live="polite" x>
+        <div class="winbox">
+          <h3 class="headXS">PLAYER 1</h3>
+          <h3 class="headL">WINS</h3>
+          <button class="headXS bluebtns">PLAY AGAIN</button>
+        </div>
+      </section>
+      <section class="playerwin2 yellowbg hidden" aria-live="polite">
+        <div class="winbox">
+          <h3 class="headXS">PLAYER 2</h3>
+          <h3 class="headL">WINS</h3>
+          <button class="headXS bluebtns">PLAY AGAIN</button>
+        </div>
+      </section>
+      <dialog class="rules">
+        <section class="rulesbox">
+          <h1 class="headL">RULES</h1>
+          <div class="rulecontent">
+            <h2 class="headS rulesh2">OBJECTIVE</h2>
+            <p class="bodytext">
+              Be the first player to connect 4 of the same colored discs in a
+              row (either vertically, horizontally, or diagonally).
+            </p>
+            <h2 class="headS rulesh2">HOW TO PLAY</h2>
+            <ol>
+              <li class="bodytext">Red goes first in the first game.</li>
+              <li class="bodytext">
+                Players must alternate turns, and only one disc can be dropped
+                in each turn.
+              </li>
+              <li class="bodytext">
+                The game ends when there is a 4-in-a-row or a stalemate.
+              </li>
+              <li class="bodytext">
+                The starter of the previous game goes second on the next game.
+              </li>
+            </ol>
+          </div>
+          <button class="acceptrulesbtn">
+            <img src="./assets/checkmark.svg" alt="accept" />
+          </button>
+        </section>
+      </dialog>
     </main>
   </body>
   <script src="./app.js"></script>
