@@ -299,6 +299,49 @@ nav {
   border-color: #5c2dd5;
 }
 
+.menubox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #7945ff;
+  border-radius: 40px;
+  color: #ffffff;
+  height: 50%;
+  gap: 20px;
+  width: 50%;
+  border-top: 3px;
+  border-right: 3px;
+  border-left: 3px;
+  border-bottom: 10px;
+  border-color: #000000;
+  border-style: solid;
+  border-radius: 40px;
+}
+.btnmenu {
+  border-top: 3px;
+  border-right: 3px;
+  border-left: 3px;
+  border-bottom: 10px;
+  border-color: #000000;
+  border-style: solid;
+  border-radius: 20px;
+  width: 60%;
+}
+.btnmenu:hover {
+  border-color: #5c2dd5;
+}
+.btnmenupvp {
+  text-align: start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffce67;
+}
+.pvpimg {
+  width: 50%;
+  height: 50%;
+}
 .hidden {
   display: none;
 }
