@@ -12,9 +12,9 @@
   <body>
     <header>
       <nav>
-        <button class="bluebtns headXS">MENU</button>
+        <button class="bluebtns headXS" id="menubtn">MENU</button>
         <img src="./assets/logo.svg" alt="logo" />
-        <button class="bluebtns headXS">RESTART</button>
+        <button class="bluebtns headXS" id="restartbtn">RESTART</button>
       </nav>
     </header>
     <main>
@@ -102,7 +102,7 @@
           <p class="headL" aria-live="assertive">30s</p>
         </div>
       </section>
-      <section class="playerwin1 redbg hidden" aria-live="polite" x>
+      <section class="playerwin1 redbg hidden" aria-live="polite">
         <div class="winbox">
           <h3 class="headXS">PLAYER 1</h3>
           <h3 class="headL">WINS</h3>
@@ -148,24 +148,24 @@
       <dialog class="pause">
         <div class="pausebox">
           <h2 class="headL">PAUSE</h2>
-          <button class="pausebtn whitepausebtn headM">CONTINUE GAME</button>
-          <button class="pausebtn whitepausebtn headM">RESTART</button>
-          <button class="pausebtn pinkpausebtn headM">QUIT GAME</button>
+          <button class="pausebtn whitepausebtn headM" id="pausecontinue">CONTINUE GAME</button>
+          <button class="pausebtn whitepausebtn headM" id="pauserestart">RESTART</button>
+          <button class="pausebtn pinkpausebtn headM" id="pausequit">QUIT GAME</button>
         </div>
       </dialog>
-      <!--<dialog class="menu">!-->
+      <dialog class="menu">
       <div class="menubox">
         <img src="./assets/logo.svg" alt="logo" />
-        <button class="btnmenu headM btnmenupvp">
+        <button class="btnmenu headM btnmenupvp" id="pvpbtn">
           PLAY VS PLAYER<img
             class="pvpimg"
             src="./assets/player-vs-player.svg"
             alt="pvp logo"
           />
         </button>
-        <button class="btnmenu headM">GAME RULES</button>
+        <button class="btnmenu headM" id="gamerulesbtn">GAME RULES</button>
       </div>
-      <!--</dialog>-->
+      </dialog>
     </main>
   </body>
   <script src="./app.js"></script>
