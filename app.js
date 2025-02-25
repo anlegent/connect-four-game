@@ -133,7 +133,7 @@ function checkWinner(grille) {
 // coder ici
 }
 
-let resultat = '"";
+let resultat = "";
 
 resultat = checkWinner(grilleAvecGagnant1); // retourne "X"
 resultat = checkWinner(grilleAvecGagnant2); // retourne "X"
