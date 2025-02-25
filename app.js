@@ -45,6 +45,9 @@ rulescheck.addEventListener("click", () => {
 menuButton.addEventListener("click", () => {
     pauseDialog.showModal();
 })
+restartButton.addEventListener("click", () => {
+    
+})
 
 pauseContinue.addEventListener("click", ()=> {
     pauseDialog.close();
@@ -58,3 +61,25 @@ pauseQuit.addEventListener("click", ()=> {
     pauseDialog.close();
     menuDialog.showModal();
 })
+
+let p1score = 0;
+let p2score = 0;
+
+const col1 = document.querySelector("#column1");
+const col2 = document.querySelector("#column2");
+const col3 = document.querySelector("#column3");
+const col4 = document.querySelector("#column4");
+const col5 = document.querySelector("#column5");
+const col6 = document.querySelector("#column6");
+const col7 = document.querySelector("#column7");
+
+let counter = 0;
+
+const gamegrid = [
+    [ "", "", "", "",  "", "", "" ],
+    [ "", "", "", "",  "", "", "" ],
+    [ "", "", "", "",  "", "", "" ],
+    [ "", "", "", "",  "", "", "" ],
+    [ "", "", "", "",  "", "", "" ],
+    [ "", "", "", "",  "", "", "" ]
+];
