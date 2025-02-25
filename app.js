@@ -83,3 +83,60 @@ const gamegrid = [
     [ "", "", "", "",  "", "", "" ],
     [ "", "", "", "",  "", "", "" ]
 ];
+
+const winnerGrid1 = [
+    [ "", "", "", "",  "", "", "" ],
+    [ "", "", "", "",  "", "", "" ],
+    [ "", "", "", "",  "", "", "" ],
+    [ "", "", "", "",  "", "", "" ],
+    [ "", "", "", "",  "", "", "" ],
+    [ "X", "X", "X", "X",  "", "", "" ]
+];
+
+const winnerGrid2 = [
+    [ "", "", "", "",  "", "", "" ],
+    [ "", "", "", "",  "", "", "" ],
+    [ "x", "", "", "",  "", "", "" ],
+    [ "x", "", "", "",  "", "", "" ],
+    [ "x", "", "", "",  "", "", "" ],
+    [ "x", "", "", "",  "", "", "" ]
+];
+
+const winnerGrid3 = [
+    [ "", "", "", "",  "", "", "" ],
+    [ "", "", "", "",  "", "", "" ],
+    [ "", "", "", "X",  "", "", "" ],
+    [ "", "", "X", "",  "", "", "" ],
+    [ "", "X", "", "",  "", "", "" ],
+    [ "X", "", "", "",  "", "", "" ]
+];
+
+const winnerGrid4 = [
+    [ "", "", "", "",  "", "", "" ],
+    [ "", "", "", "",  "O", "", "" ],
+    [ "", "", "", "X",  "", "", "" ],
+    [ "", "", "X", "O",  "", "", "" ],
+    [ "", "O", "O", "O",  "", "", "" ],
+    [ "X", "O", "O", "O",  "O", "", "" ]
+];
+
+const loserGrid1 = [
+    [ "", "", "", "",  "", "", "" ],
+    [ "", "", "", "",  "", "", "" ],
+    [ "", "", "", "X",  "", "", "" ],
+    [ "", "", "X", "O",  "", "", "" ],
+    [ "", "O", "O", "O",  "", "", "" ],
+    [ "X", "O", "O", "X",  "O", "", "" ]
+];
+
+function checkWinner(grille) {
+// coder ici
+}
+
+let resultat = '"";
+
+resultat = checkWinner(grilleAvecGagnant1); // retourne "X"
+resultat = checkWinner(grilleAvecGagnant2); // retourne "X"
+resultat = checkWinner(grilleAvecGagnant3); // retourne "X"
+resultat = checkWinner(grilleAvecGagnant4); // retourne "O"
+resultat = checkWinner(grilleSansGagnant); // retourne ""
