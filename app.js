@@ -143,9 +143,10 @@ resultat = checkWinner(loserGrid1); // retourne ""
 
 let chronoContent = document.querySelector("#chronocount")
 let chronoValue = 15;
+
 for (let I = 0; I < chronoValue ; I++) {
     setInterval( function () {
-        chronoValue.textContent = I + "s"
+        chronoContent.textContent = I + "s"
     }, 1000)
     console.log("a")
 }
