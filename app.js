@@ -135,8 +135,17 @@ function checkWinner(grille) {
 
 let resultat = "";
 
-resultat = checkWinner(grilleAvecGagnant1); // retourne "X"
-resultat = checkWinner(grilleAvecGagnant2); // retourne "X"
-resultat = checkWinner(grilleAvecGagnant3); // retourne "X"
-resultat = checkWinner(grilleAvecGagnant4); // retourne "O"
-resultat = checkWinner(grilleSansGagnant); // retourne ""
+resultat = checkWinner(winnerGrid1); // retourne "X"
+resultat = checkWinner(winnerGrid2); // retourne "X"
+resultat = checkWinner(winnerGrid3); // retourne "X"
+resultat = checkWinner(winnerGrid4); // retourne "O"
+resultat = checkWinner(loserGrid1); // retourne ""
+
+let chronoContent = document.querySelector("#chronocount")
+let chronoValue = 15;
+for (let I = 0; I < chronoValue ; I++) {
+    setInterval( function () {
+        chronoValue.textContent = I + "s"
+    }, 1000)
+    console.log("a")
+}
