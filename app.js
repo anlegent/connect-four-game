@@ -32,8 +32,11 @@ pvpButton.addEventListener("click", () => {
     header.classList.remove("hidden")
     chrono.classList.remove("hidden")
     menuDialog.close();
+    p1score = 0;
+    p2score = 0;
     p1ScoreText.textContent = 0;
     p2ScoreText.textContent = 0;
+    chronoCounter = chronoValue
     chronoContent.textContent = chronoValue + "s"
 })
 
@@ -80,7 +83,6 @@ const col5 = document.querySelector("#column5");
 const col6 = document.querySelector("#column6");
 const col7 = document.querySelector("#column7");
 
-let counter = 0;
 
 const gamegrid = [
     [ "", "", "", "",  "", "", "" ],
