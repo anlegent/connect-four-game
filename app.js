@@ -17,6 +17,8 @@ const pauseContinue = document.querySelector("#pausecontinue")
 const pauseRestart = document.querySelector("#pauserestart")
 const pauseQuit = document.querySelector("#pausequit")
 
+let chronoContent = document.querySelector("#chronocount")
+let chronoValue = 15
 
 window.addEventListener("load", () => {
     menuDialog.showModal();
@@ -30,6 +32,9 @@ pvpButton.addEventListener("click", () => {
     header.classList.remove("hidden")
     chrono.classList.remove("hidden")
     menuDialog.close();
+    p1ScoreText.textContent = 0;
+    p2ScoreText.textContent = 0;
+    chronoContent.textContent = chronoValue + "s"
 })
 
 rulesButton.addEventListener("click", () => {
@@ -64,6 +69,8 @@ pauseQuit.addEventListener("click", ()=> {
 
 let p1score = 0;
 let p2score = 0;
+let p1ScoreText = document.querySelector("#p1score")
+let p2ScoreText = document.querySelector("#p2score")
 
 const col1 = document.querySelector("#column1");
 const col2 = document.querySelector("#column2");
@@ -140,13 +147,3 @@ resultat = checkWinner(winnerGrid2); // retourne "X"
 resultat = checkWinner(winnerGrid3); // retourne "X"
 resultat = checkWinner(winnerGrid4); // retourne "O"
 resultat = checkWinner(loserGrid1); // retourne ""
-
-let chronoContent = document.querySelector("#chronocount")
-let chronoValue = 15;
-
-for (let I = 0; I < chronoValue ; I++) {
-    setInterval( function () {
-        chronoContent.textContent = I + "s"
-    }, 1000)
-    console.log("a")
-}
