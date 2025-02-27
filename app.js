@@ -73,6 +73,12 @@ pauseQuit.addEventListener("click", ()=> {
     chrono.classList.add("hidden")
     pauseDialog.close();
     menuDialog.showModal();
+    p1score = 0;
+    p2score = 0;
+    p1ScoreText.textContent = 0;
+    p2ScoreText.textContent = 0;
+    let chronoCounter = chronoValue
+    chronoContent.textContent = chronoValue + "s"
 })
 
 let p1score = 0;
