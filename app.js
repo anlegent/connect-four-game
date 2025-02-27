@@ -36,7 +36,7 @@ pvpButton.addEventListener("click", () => {
     p2score = 0;
     p1ScoreText.textContent = 0;
     p2ScoreText.textContent = 0;
-    chronoCounter = chronoValue
+    let chronoCounter = chronoValue
     chronoContent.textContent = chronoValue + "s"
 })
 
@@ -54,7 +54,12 @@ menuButton.addEventListener("click", () => {
     pauseDialog.showModal();
 })
 restartButton.addEventListener("click", () => {
-    
+    p1score = 0;
+    p2score = 0;
+    p1ScoreText.textContent = 0;
+    p2ScoreText.textContent = 0;
+    let chronoCounter = chronoValue
+    chronoContent.textContent = chronoValue + "s"
 })
 
 pauseContinue.addEventListener("click", ()=> {
